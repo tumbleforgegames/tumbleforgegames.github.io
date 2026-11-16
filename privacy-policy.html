@@ -20,6 +20,13 @@
     .back-home { background: var(--soft); color: var(--ink); }
     .back-home:hover { background: var(--ink); color: #fff; }
     .back-home:hover svg { transform: translate(-2px, 0); }
+    @media (max-width: 460px) {
+      /* Narrow phones: keep the logo and a short "Back" on one line */
+      .wide-only { display: none; }
+      .policy-header { gap: 8px; padding-inline: 14px; }
+      .policy-header .brand { font-size: clamp(16px, 5.6vw, 21px); }
+      .policy-header .btn { padding-inline: 12px; }
+    }
 
     .policy { padding-top: 12px; }
     .policy-card {
@@ -44,6 +51,7 @@
       font-size: 17px;
       line-height: 1.65;
       color: #2b2a27;
+      overflow-wrap: anywhere;
     }
     .policy p.updated { margin-bottom: 4px; font-size: 14px; color: var(--ink-2); }
     .policy p.updated + p:not(.updated) { margin-top: 28px; }
@@ -67,7 +75,7 @@
       <div class="header-actions">
         <a class="btn back-home" href="./">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
-          Back to home
+          <span>Back<span class="wide-only"> to home</span></span>
         </a>
       </div>
     </header>
