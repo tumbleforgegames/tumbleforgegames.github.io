@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tumbleforge Games | Small, relaxing games for Android</title>
+  <meta name="description" content="Tumbleforge Games makes small, relaxing games for Android. Play Letterbrook, a calm word puzzle game, free on Google Play.">
+  <link rel="canonical" href="https://tumbleforgegames.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tumbleforgegames.github.io/">
+  <meta property="og:title" content="Tumbleforge Games">
+  <meta property="og:description" content="Small, relaxing games for Android. Play Letterbrook, free on Google Play.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Geist:wght@400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#games">Skip to games</a>
+
+  <div class="frame" id="top">
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Tumbleforge Games, back to top">TUMBLEFORGE<span>.</span></a>
+
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="#games">Games</a>
+        <a href="#letterbrook">Letterbrook</a>
+        <a href="#studio">Studio</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" data-play-featured href="https://play.google.com/store/apps/details?id=com.letterbrook.game" target="_blank" rel="noopener">Get Letterbrook on Google Play</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="text-link" data-dev-link href="https://play.google.com/store/apps/developer?id=Tumbleforgegames" target="_blank" rel="noopener">Google Play</a>
+        <a class="btn btn-soft" data-play-featured href="https://play.google.com/store/apps/details?id=com.letterbrook.game" target="_blank" rel="noopener">
+          Get Letterbrook
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- Hero -->
+      <section class="hero" aria-label="Tumbleforge Games">
+        <div class="hero-top">
+          <h1 class="wordmark" aria-label="Tumbleforge Games">
+            <span class="wm-line wm-tumble" aria-hidden="true"><span class="wm-l">T</span><span class="wm-l">U</span><span class="wm-l">M</span><span class="wm-l">B</span><span class="wm-l">L</span><span class="wm-l">E</span></span><span class="wm-line wm-forge" aria-hidden="true"><span class="wm-l">F</span><span class="wm-l">O</span><span class="wm-l">R</span><span class="wm-l">G</span><span class="wm-l">E</span><span class="wm-l">.</span></span>
+          </h1>
+        </div>
+
+        <div class="hero-stage">
+          <div class="orb" aria-hidden="true">
+            <div class="orb-fallback"></div>
+            <canvas></canvas>
+          </div>
+
+          <a class="hero-live" href="#letterbrook">
+            <span class="hero-live-row">
+              <img src="https://play-lh.googleusercontent.com/_T5wvb2CVoHyK0SyngUhgHWKQw8DTCuinGiiV-w_Zu1mKXPjFrcGIRZG7-gM18fZrtjzzLmc9_dNr8riw_nf=s240-rw" alt="" width="40" height="40">
+              <strong>Out now</strong>
+            </span>
+            <small>Letterbrook, free on Google Play</small>
+          </a>
+
+          <ul class="hero-index">
+            <li>Plays offline <i>/01</i></li>
+            <li>No timers <i>/02</i></li>
+            <li>Free to play <i>/03</i></li>
+          </ul>
+
+          <p class="hero-tagline">Small, relaxing games for Android. Made for coffee breaks, commutes and winding down.</p>
+
+          <a class="hero-cta" href="#games">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+            See the games
+          </a>
+        </div>
+      </section>
+
+      <!-- Games -->
+      <section class="games panel-dark" id="games" aria-labelledby="games-title">
+        <div class="kicker">
+          <span>/ Games</span>
+          <span id="games-count">01 game live on Google Play</span>
+        </div>
+
+        <h2 class="headline reveal" id="games-title">Games from the forge, live on <span class="hl">Google Play.</span></h2>
+
+        <div id="game-list">
+          <noscript>
+            <p class="noscript-note">
+              Our games are on Google Play:
+              <a href="https://play.google.com/store/apps/developer?id=Tumbleforgegames">see everything by Tumbleforge Games</a>.
+            </p>
+          </noscript>
+        </div>
+
+        <div class="soon reveal">
+          <div>
+            <p class="soon-kicker">Next from the forge</p>
+            <p class="soon-text">More games are on the anvil. They show up here the day they reach Google Play.</p>
+          </div>
+          <a class="btn btn-outline" data-dev-link href="https://play.google.com/store/apps/developer?id=Tumbleforgegames" target="_blank" rel="noopener">
+            Tumbleforge on Google Play
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Studio -->
+      <section class="studio" id="studio" aria-labelledby="studio-title">
+        <p class="kicker kicker-light"><span>/ Studio</span></p>
+        <div class="studio-grid">
+          <h2 class="reveal" id="studio-title">Small, relaxing games for Android.</h2>
+          <div>
+            <p class="lede reveal">Tumbleforge Games makes calm puzzle games you can pick up for a few quiet minutes and put down whenever you like.</p>
+            <ol class="principles">
+              <li class="reveal">
+                <i>/01</i>
+                <div>
+                  <h3>No timers, no pressure</h3>
+                  <p>Play at your own pace. If you get stuck, shuffle the letters for a fresh look or use a hint.</p>
+                </div>
+              </li>
+              <li class="reveal">
+                <i>/02</i>
+                <div>
+                  <h3>Free, and fair about ads</h3>
+                  <p>Letterbrook has no ads in its first levels, then a short ad at most once every few levels. There is nothing to buy.</p>
+                </div>
+              </li>
+              <li class="reveal">
+                <i>/03</i>
+                <div>
+                  <h3>Comfortable for everyone</h3>
+                  <p>Swipe or tap to play, in light or dark, with reduced motion and separate switches for music, sound and vibration.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to action -->
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="tiles" aria-hidden="true">
+          <span>U</span><span>N</span><span>W</span><span>I</span><span>N</span><span>D</span>
+        </div>
+        <h2 id="cta-title">Got five quiet minutes?</h2>
+        <p>Letterbrook is free on Google Play. No account, no internet needed.</p>
+        <a class="btn btn-dark btn-lg" data-play-featured href="https://play.google.com/store/apps/details?id=com.letterbrook.game" target="_blank" rel="noopener">
+          Get it on Google Play
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </section>
+
+    </main>
+
+    <!-- Contact / footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-grid">
+        <div class="footer-contact">
+          <h2>Say hello</h2>
+          <p>Questions, feedback or a puzzle that stumped you? We read everything.</p>
+          <a class="contact-mail" href="mailto:tumbleforgegames@gmail.com">tumbleforgegames@gmail.com</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Games</h3>
+          <div id="footer-games">
+            <a href="https://play.google.com/store/apps/details?id=com.letterbrook.game" target="_blank" rel="noopener">Letterbrook</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Studio</h3>
+          <a href="#studio">About</a>
+          <a data-dev-link href="https://play.google.com/store/apps/developer?id=Tumbleforgegames" target="_blank" rel="noopener">Google Play</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <a href="https://dhruvpaul10.github.io/privacy-policy.html" target="_blank" rel="noopener">Privacy policy</a>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <span>&copy; <span id="year">2026</span> Tumbleforge Games</span>
+        <span>Google Play is a trademark of Google LLC.</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/games.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/orb.js"></script>
+</body>
+</html>
